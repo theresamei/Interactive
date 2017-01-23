@@ -1,8 +1,32 @@
 h1 {
 	color: #00FF49;
-	font-family: Arial, Helvetica, Sans-serif;
+	font-family: "Optima", Optima, Sans-serif;
+	font-size: 60px;
+	text-transform: normal;
 }
 
 h2 {
 	font-family: Arial, Helvetica, Sans-serif;
+}
+
+ol {
+	font-family: Arial, Helvetica, Sans-serif;
+
+}
+
+ol a:link {
+	color: #000;
+	font-family: Arial, Helvetica, Sans-serif;
+
+}
+
+ol a:visited {
+	color: #000;
+	font-family: Arial, Helvetica, Sans-serif;
+}
+
+ol a:hover {
+	background-color: #00FF49;
+	font-family: Arial, Helvetica, Sans-serif;
+
 }
