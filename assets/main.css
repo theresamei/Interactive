@@ -1,8 +1,16 @@
+p {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+
+}
+
 h1 {
 	color: #00FF49;
-	font-family: "Optima", Optima, Sans-serif;
-	font-size: 60px;
-	text-transform: normal;
+	font-family: "Roboto Mono", Roboto, monospace;
+	font-size: 40px;
+	font-weight: normal;
+	letter-spacing:-1px;
 }
 
 h2 {
@@ -11,12 +19,14 @@ h2 {
 
 ol {
 	font-family: Arial, Helvetica, Sans-serif;
+	font-size:15px;
 
 }
 
 ol a:link {
 	color: #000;
 	font-family: Arial, Helvetica, Sans-serif;
+	font-size:15px;
 
 }
 
