@@ -5,6 +5,13 @@ p {
 
 }
 
+p .curly {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size:15px;
+    background: url(images/underline.gif) bottom repeat-x;
+
+}
+
 h1 {
 	color: #00FF49;
 	font-family: "Roboto Mono", Roboto, monospace;
@@ -20,23 +27,21 @@ h2 {
 	letter-spacing:-0.5px;
 }
 
-a {
-    color:#000;
+a, a:visited, a:active {
+    color:#00FF49;
     font-family: Arial, Helvetica, Sans-serif;
     font-size:15px;
+    text-decoration: none;
 }
 
-a:link {
-	color:#000;
-	font-family: Arial, Helvetica, Sans-serif;
-}
 
 a:hover {
-	background-color:#00FF49;
     color:#000;
     font-family: Arial, Helvetica, Sans-serif;
     font-size:15px;
-}
+    text-decoration: none;
+    background: url(images/underline.gif) bottom repeat-x;
+ }
 
 ol {
 	font-family: Arial, Helvetica, Sans-serif;
@@ -45,7 +50,7 @@ ol {
 }
 
 ol a:link {
-	color: #000;
+	color: #00FF49;
 	font-family: Arial, Helvetica, Sans-serif;
 	font-size:15px;
 
@@ -76,3 +81,4 @@ hr {
 .column-left{ float: left; width: 33%; }
 .column-right{ float: right; width: 33%; }
 .column-center{ display: inline-block; width: 33%; }
+
