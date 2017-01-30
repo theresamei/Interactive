@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0; margin: 0; 
+}
+
 p {
 	font-family: Arial, Helvetica, Sans-serif;
 	font-size: 15px;
@@ -65,17 +71,6 @@ ol a:hover {
 	background-color: #00FF49;
 	font-family: Arial, Helvetica, Sans-serif;
 
-}
-
-.myButtonLink {
-	display: block;
-	width: 500px;
-	height:auto;
-	background: url(assets/images/dino.png) bottom;
-	text-indent: -99999px;
-}
-.myButtonLink:hover {
-	background-position: 0 0;
 }
 
 hr { 
