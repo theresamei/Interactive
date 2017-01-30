@@ -67,6 +67,17 @@ ol a:hover {
 
 }
 
+.myButtonLink {
+	display: block;
+	width: 500px;
+	height:auto;
+	background: url(assets/images/dino.png) bottom;
+	text-indent: -99999px;
+}
+.myButtonLink:hover {
+	background-position: 0 0;
+}
+
 hr { 
     display: block;
     margin-bottom: 0.25em;
