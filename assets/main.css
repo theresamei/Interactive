@@ -8,13 +8,34 @@ p {
 h1 {
 	color: #00FF49;
 	font-family: "Roboto Mono", Roboto, monospace;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: normal;
+	line-height:35px;
 	letter-spacing:-1px;
 }
 
 h2 {
+	font-family: "Roboto Mono", Roboto, monospace;
+	font-weight:normal;
+	letter-spacing:-0.5px;
+}
+
+a {
+    color:#000;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size:15px;
+}
+
+a:link {
+	color:#000;
 	font-family: Arial, Helvetica, Sans-serif;
+}
+
+a:hover {
+	background-color:#00FF49;
+    color:#000;
+    font-family: Arial, Helvetica, Sans-serif;
+    font-size:15px;
 }
 
 ol {
@@ -40,3 +61,8 @@ ol a:hover {
 	font-family: Arial, Helvetica, Sans-serif;
 
 }
+
+.container{ width:700px; padding-left:40px; }
+.column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
