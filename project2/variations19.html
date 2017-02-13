@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Variation 19</title>
+	<meta chartset="utf-8">
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(function(){
+		  $('a').click(function(){
+		      $('html, body').animate({
+		          scrollTop: $( $(this).attr('href') ).offset().top
+		      }, 500);
+		      return false;
+		  });
+		});
+	</script>
+
+<style>
+body {
+	background-color:#4424f3;;
+}
+
+.container {
+	width:900px;
+	overflow:hidden;
+	position:absolute;
+	margin:0 auto;
+	padding-top:100px;
+}
+
+.section1 {
+	float:left;
+	font-size:300px;
+	line-height:350px;
+	text-align:center;
+	color:#332ccd;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.section2 {
+	width:200px;
+	font-size:50px;
+	padding-right:50px;
+	line-height:60px;
+	text-align:justify;
+	color:#ffbf3d;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.section3 {
+	width:400px;
+	margin-top:4000px;
+	font-size:50px;
+	padding-right:50px;
+	line-height:60px;
+	text-align:justify;
+	color:#ffbf3d;
+	font-family:"Courier New", Courier, monospace;
+}
+
+.footer {
+	position:fixed;
+	margin:auto;
+	width:100%;
+	bottom:0;
+	text-align:center;
+	color:#a29d77;
+	font-family:"Andale Mono", monospace;
+	font-size:50px;
+	line-height:30px;
+	text-transform:uppercase;
+}
+
+a {
+	text-decoration:none;
+	color:#ffbf3d;
+}
+
+a:hover {
+	color:#FFF;
+}
+
+</style>
+
+<body> 
+<div class="footer">matsuo bash&omacr;<br><span style="font-size:15px"><i>English translation by Jane Reichhold</i></span></div>
+<div class="section1">an old pond</div>
+
+<div class="container">
+<div class="section2">a frog <a href="#jumps">jumps</a></div>
+<div class="section3"><p id="jumps">into the sound of water</p></div>
+</div>
+
+
+
+
+
+<p style="display: block; position: fixed; top: 5px; right: 1em; font-size:40px; color: #e13e27;"><a style="text-decoration: none; color:#e13e27" href="variations20.html">&#8634;</a></p>
+</body>
+
+</html>
