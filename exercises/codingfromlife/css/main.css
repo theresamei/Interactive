@@ -1,0 +1,264 @@
+body {
+	background: black;
+}
+
+.canvas {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: #CDD2C4;
+	position: relative;
+	-webkit-animation: background 60s cubic-bezier(1,0,0,1) infinite;
+  	animation: background 60s cubic-bezier(1,0,0,1) infinite; 
+}
+
+@-webkit-keyframes background {
+  0% { background-color: #CDD2C4; }
+  33% { background-color: #b0b7a3; }  
+  67% { background-color: #8f9680; }
+  80% { background-color: #656b59; }
+}
+
+@keyframes background {
+  0% { background-color: #CDD2C4; }
+  33% { background-color: #b0b7a3; }  
+  67% { background-color: #8f9680; }
+  80% { background-color: #656b59; }
+}
+
+#mirror {
+    width: 430px;
+    height: 80px;
+    -webkit-transform: skew(70deg);
+    -moz-transform: skew(70deg);
+    -o-transform: skew(70deg);
+    background: #484def;
+    top: 406px;
+    left: 120px;
+    border-radius:20px;
+    position: absolute;
+}
+
+#vase {
+    width: 64px;
+    height: 205px;
+    background: #d5dec3;
+    border-top:0.5px solid white;
+    border-right:0.25px solid white;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    top: 233px;
+    left: 389px;
+    position: absolute;
+    -webkit-animation: background 60s cubic-bezier(1,0,0,1) infinite;
+  	animation: background 60s cubic-bezier(1,0,0,1) infinite; 
+}
+
+#vase .water {
+    width: 64px;
+    height: 125px;
+    background: white;
+    opacity:0.3;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
+    top: 81px;
+    left: 0px;
+    position: absolute;
+}
+
+#vase .flowers-container {
+	width:800px;
+	height:300px;
+	position:absolute;
+}
+
+#vase .flowers-container .flowerstem {
+	width:4px;
+	height:225px;
+	top: -24px;
+    left: 30px;
+	position:absolute;
+	background:#65e465;
+}
+
+#vase .flowers-container .flowerstem .one {
+	width:4px;
+	height:225px;
+	top: -24px;
+    left: 30px;
+	background:#65e465;
+	-ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    transform: rotate(4deg);
+
+}
+
+#vase .flowers-container .flowerstem .two {
+	width:4px;
+	height:225px;
+	top: -1px;
+    left: 18px;
+	position:absolute;
+	background:#65e465;
+	-ms-transform: rotate(-4deg); /* IE 9 */
+    -webkit-transform: rotate(-4deg); /* Chrome, Safari, Opera */
+    transform: rotate(-4deg);
+
+ }
+
+#vase .flowers-container .petals {
+	width:200px;
+	height:400px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	position:absolute;
+
+}
+
+#vase .flowers-container .petals .one {
+	width:12px;
+	height:17px;
+	-webkit-transform: skew(2deg);
+	   -moz-transform: skew(2deg);
+	     -o-transform: skew(2deg);
+	background: #fff2b4;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	top: -15px;
+    left: 66px;
+	position:absolute;
+
+}
+
+#vase .flowers-container .petals .two {
+	width:12px;
+	height:30px;
+	-webkit-transform: skew(-10deg);
+	   -moz-transform: skew(-10deg);
+	     -o-transform: skew(-10deg);
+	background: #fff2b4;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	top: -30px;
+    left: 80px;
+	position:absolute;
+
+}
+
+#vase .flowers-container .petals .three {
+	width:12px;
+	height:28px;
+	-webkit-transform: skew(-40deg);
+	   -moz-transform: skew(-40deg);
+	     -o-transform: skew(-40deg);
+	background: #fff2b4;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+	top: -27px;
+    left: 96px;
+	position:absolute;
+
+}
+
+#orb {
+	width: 200px;
+	height: 180px;
+	background: white;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 80px;
+	border-bottom-right-radius: 80px;
+	top: 270px;
+	left: 120px;
+	position: absolute;
+}
+
+#clementine-one {
+    width: 50px;
+    height: 45px;
+    background: #fb8710;
+    border-radius:33px;
+    top: 420px;
+    left: 267px;
+    position: absolute;
+}
+
+#clementine-one .stem {
+    width: 5px;
+    height: 4px;
+    background: green;
+    border-radius: 5px;
+    top: 3px;
+    left: 20px;
+    position: absolute;
+}
+
+#clementine-two {
+    width: 41px;
+    height: 34px;
+    background: #fb8710;
+    border-radius: 33px;
+    top: 429px;
+    left: 316px;
+    position: absolute;
+}
+
+#clementine-three {
+    width: 35px;
+    height: 44px;
+    background: #fb8710;
+    border-radius: 43px;
+    top: 374px;
+    left: 354px;
+    position: absolute;
+}
+
+#squash {
+	width: 77px;
+    height: 110px;
+    background: #f3b987;
+    top: 350px;
+    left: 305px;
+    -webkit-border-radius: 40px 40px 40px 40px / 108px 108px 72px 72px;
+    border-radius: 50% 50% 50% 50% / 80% 80% 30% 30%;
+    -ms-transform: rotate(125deg); /* IE 9 */
+    -webkit-transform: rotate(125deg); /* Chrome, Safari, Opera */
+    transform: rotate(125deg);
+    position: absolute;
+}
+
+#squash .dot {
+	width: 13px;
+    height: 13px;
+    background: #f9ecd3;
+    text-align: center;
+    -webkit-transform: rotate(20deg);
+       -moz-transform: rotate(20deg);
+        -ms-transform: rotate(20deg);
+         -o-transform: rotate(20deg);
+    position:absolute;
+	top: 6px;
+    left: 37px;
+    border: 1px solid #c39d63;
+
+}
+
+#squash .dot:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13px;
+    width: 13px;
+    background: #f9ecd3;
+    -webkit-transform: rotate(135deg);
+       -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+         -o-transform: rotate(135deg);
+
+}
