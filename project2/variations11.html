@@ -7,26 +7,79 @@
 </head>
 
 <style>
-.container {
+#container {
 	display:auto;
-	margin:300px;
+	margin:800px;
 }
-.water {
-	padding:20px;
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
 }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 180px;
+    height:20px;
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 4px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    margin-top:-25px;
+}
+
+.tooltiptwo {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltiptwo .tooltiptexttwo {
+    visibility: hidden;
+    width: 230px;
+    height:20px;
+    border:1px solid black;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 4px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+}
+
+.tooltiptwo:hover .tooltiptexttwo {
+    visibility: visible;
+    margin-top:-25px;
+    left:400px;
+}
+
+
 </style>
 
 <body>
-<div>an old pond</div>
+<div><h1><i>pancake?</i> by shel silverstein</h1></div>
 <div class="container">
-<div>a frog</div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;j</div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;u</div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;m</div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;p</div>
-<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;s</div>
-<div class="water">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;into the sound of water
+<p>Who wants a pancake,<br>sweet and piping hot?</p></div>
+<div class="container">Good little Grace looks up and <div class="tooltip">says, <span class="tooltiptext">&quot;I&#39;ll take the one on top.&quot;</span></div></div>
+<div class="container">
+<p>Who else wants a pancake,<br>Fresh off the griddle?</p></div>
+<div class="container">
+Terrible Theresa smiles and <div class="tooltiptwo">says, <span class="tooltiptexttwo">&quot;I&#39;ll take the one in the middle.&quot;</span></div>
 </div>
+</div>
+
 </div>
 
 <p style="display: block; position: fixed; top: 5px; right: 1em; font-size:40px; color: #00FF49;"><a style="text-decoration: none; color:#00FF49" href="variations12.html">&#8634;</a></p>
