@@ -2,7 +2,7 @@ html, body {
     height: 100%;
     width: 100%;
     padding: 0; margin: 0; 
-    background: tan;
+    background: blanchedalmond;
 }
 
 p {
@@ -20,8 +20,8 @@ p .curly {
 }
 
 h1 {
-	color: #00FF49;
-	font-family: "Roboto Mono", Roboto, monospace;
+	color: #e4ff6c;
+	font-family: "Courier New", Courier, monospace;
 	font-size: 30px;
 	font-weight: normal;
 	line-height:35px;
@@ -29,62 +29,116 @@ h1 {
 }
 
 h2 {
-	font-family: "Roboto Mono", Roboto, monospace;
+	color:#58595b;
+	font-family: "Courier New", Courier, monospace;
 	font-weight:normal;
 	letter-spacing:-0.5px;
+	text-align:center;
 }
 
 a, a:visited, a:active {
-    color:#00FF49;
+    color:#ffff6c;
     font-family: Arial, Helvetica, Sans-serif;
-    font-size:15px;
+    font-size:100px;
     text-decoration: none;
+    letter-spacing:-1px;
+    padding:10px;
 }
 
 
 a:hover {
-    color:#000;
+    color:#fdff59;
     font-family: Arial, Helvetica, Sans-serif;
-    font-size:15px;
+    font-size:100px;
     text-decoration: none;
-    background: url(images/underline.gif) bottom repeat-x;
+    letter-spacing:-1px;
+    border:0.5px solid gray;
  }
 
 ol {
 	font-family: Arial, Helvetica, Sans-serif;
-	font-size:15px;
+	font-size:100px;
 
 }
 
 ol a:link {
-	color: #00FF49;
+	color: #fdff59;
 	font-family: Arial, Helvetica, Sans-serif;
-	font-size:15px;
+	font-size:100px;
 
 }
 
 ol a:visited {
-	color: #000;
+	color: #fdff59;
 	font-family: Arial, Helvetica, Sans-serif;
 }
 
 ol a:hover {
-	background-color: #00FF49;
+	background-color: #fdff59;
 	font-family: Arial, Helvetica, Sans-serif;
 
 }
 
 hr { 
     display: block;
-    margin-bottom: 0.25em;
     margin-left: auto;
     margin-right: auto;
     border-style: dashed;
     border-width: .5px;
 }
 
-.container{ width:750px; padding-left:40px; }
-.column-left{ float: left; width: 250px; }
-.column-right{ float: right; width: 250px; }
-.column-center{ display: inline-block; width: 250px; }
+.container { 
+	width:900px; 
+	position:absolute;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+
+.container .nav {
+	width:100%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+	float:left;
+
+}
+
+.container .nav .a,.container .nav .b, .container .nav .c, .container .nav .d, .container .nav .e, .container .nav .f, .container .nav .g, .container .nav .h, .container .nav .i, .container .nav .j, .container .nav .k, .container .nav .l,.container .nav .m, .container .nav .n, .container .nav .o, .container .nav .p, .container .nav .q, .container .nav .r, .container .nav .s, .container .nav .t, .container .nav .u, .container .nav .v, .container .nav .w, .container .nav .x, .container .nav .y {
+	width:20%;
+	height:180px;
+	float:left;
+
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    height:18px;
+    font-family:"Courier New", Courier, monospace;
+    font-size:13px;
+    border:1px solid black;
+    background-color: white;
+    color: #58595b;
+    text-align: center;
+    padding: 4px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 9;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    margin-top:-25px;
+    left:40px;
+}
 

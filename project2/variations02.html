@@ -5,6 +5,80 @@
 	<title>Variation 02</title>
 </head>
 
+<style>
+body {
+	margin-bottom:10px;
+}
+
+.nav-container {
+    width:100%;
+    height:40px;
+    position:fixed;
+    bottom:0px;
+    margin-bottom:0px;
+
+}
+.backwarddiv {
+    width:80px;
+    height:40px;
+    margin-left:15px;
+    float:left;
+
+}
+
+.backward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.backward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.forwarddiv {
+    width:50px;
+    height:40px;
+    right:50px;
+    float:right;
+
+}
+
+.forward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.forward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.home {
+    width:50px;
+    height:40px;
+    right:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.homebutton {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+}
+
+.homebutton:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+</style>
+
 <body>
 <p>PANCAKE? by shel silverstein<Br><br>who wants a pancake,<br>
 <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sweet &nbsp;&nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp;&nbsp;piping hot?<br><br>
@@ -18,7 +92,11 @@ Fresh &nbsp;&nbsp;&nbsp; the griddle?<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&quot;I&#39;ll take the one in the middle.&quot;<br>
 </p>
 
-<p style="display: block; position: fixed; top: 0px; right: 1em; font-size:40px; color: #00FF49;"><a style="text-decoration: none; color:#00FF49" href="variations03.html">&#8634;</a></p>
+<div class="nav-container">
+<div class="backwarddiv"><a href="variations01.html"><div class="backward"></div></a></div>
+<div class="forwarddiv"><a href="variations03.html"><div class="forward"></div></a></div>
+<div class="home"><a href="index.html"><div class="homebutton"></div></a></div>
+</div>
 </body>
 
 </html>

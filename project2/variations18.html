@@ -8,43 +8,137 @@
 
 <style>
 body {
-	background-color:#d8ead3;;
-}
-.section1 {
-	position:fixed;
-	margin:auto;
-	width:100%;
-	top:50%;
-	left:0;
-	text-align:center;
-	color:#4424f3;
 	font-family:"Courier New", Courier, monospace;
-	font-size:50px;
-	line-height:50px;
+	font-weight:normal;
+	margin-bottom:10px;
+
 }
 
-.section2 {
-	position:absolute;
-	margin:auto;
-	width:97%;
-	font-size:190px;
-	line-height:300px;
-	text-align:center;
-	color:#ffbf3d;
-	font-family:"Courier New", Courier, monospace;
+h1 {
+	margin:0 auto;
+	font-size:500px;
 }
+
+h1, h3 {
+	font-family:"Courier New", Courier, monospace;
+	font-weight:normal;
+}
+
+.container {
+	width:500px;
+	height:auto;
+	position:fixed;
+}
+
+.author {
+	position:fixed;
+	margin:0 auto;
+	text-align:center;
+	overflow:scroll;
+	width:96%;
+	left:0;
+
+}
+
+.verticaltext {
+    width:1px;
+    word-wrap: break-word;
+    font-family: monospace;
+    display:inline;
+    float:left;
+    margin-top:60px;
+    padding:10px;}
+
+.nav-container {
+    width:100%;
+    height:40px;
+    position:fixed;
+    bottom:0px;
+    margin-bottom:0px;
+
+}
+.backwarddiv {
+    width:80px;
+    height:40px;
+    margin-left:15px;
+    float:left;
+
+}
+
+.backward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.backward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.forwarddiv {
+    width:50px;
+    height:40px;
+    right:50px;
+    float:right;
+
+}
+
+.forward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.forward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.home {
+    width:50px;
+    height:40px;
+    right:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.homebutton {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+}
+
+.homebutton:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
 
 </style>
 
-<body> 
-<div class="section1">matsuo bash&omacr;<br><span style="font-size:15px"><i>English translation by Jane Reichhold</i></span></div>
-<div class="section2">an old pond<br>a frog jumps<br>into the sound of water</div>
+<body>
+<div class="author"><h3>shel silverstein</h3> <h1><i>pancake?</i></h1></div>
+<div class="container">
+<p class="verticaltext">Who wants a pancake?<p>
+<p class="verticaltext">Sweet and piping hot?</p>
+<p class="verticaltext">Good little Grace looks up and says,</p>
+<p class="verticaltext">&quot;I&#39;ll take the one on top.&quot;</p> 
+<p class="verticaltext">Who else wants a pancake,</p>
+<p class="verticaltext">Fresh off the griddle?</p>
+<p class="verticaltext">Terrible Theresa smiles and says,</p>
+<p class="verticaltext">I&#39;ll take the one in the <a href="variations18_a.html">middle</a>.&quot;</p>
+</div>
 
+<div class="nav-container">
+<div class="backwarddiv"><a href="variations17.html"><div class="backward"></div></a></div>
+<div class="forwarddiv"><a href="variations19.html"><div class="forward"></div></a></div>
+<div class="home"><a href="index.html"><div class="homebutton"></div></a></div>
+</div>
 
-
-
-
-<p style="display: block; position: fixed; top: 0px; right: 1em; font-size:40px; color: #e13e27;"><a style="text-decoration: none; color:#e13e27" href="variations19.html">&#8634;</a></p>
 </body>
 
 </html>

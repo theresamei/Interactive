@@ -19,87 +19,195 @@
 	</script>
 
 <style>
-body {
-	background-color:#4424f3;;
+body{
+  margin-bottom:30px;
+	font-family:Arial, sans-serif;
+	-webkit-animation: background 50s cubic-bezier(1,0,0,1) infinite;
+  	animation: background 50s cubic-bezier(1,0,0,1) infinite; 
 }
 
-.container {
-	width:900px;
-	overflow:hidden;
-	position:absolute;
-	margin:0 auto;
-	padding-top:20px;
-	padding-left:60px;
+@-webkit-keyframes background {
+  0% { background-color: white; }
+  33% { background-color: moccasin; }  
+  67% { background-color: blanchedalmond; }
+  80% { background-color: navajowhite; }
 }
 
-.section1 {
-	float:left;
-	font-size:500px;
-	line-height:950px;
-	text-align:center;
-	color:#332ccd;
-	font-family:"Courier New", Courier, monospace;
+@keyframes background {
+  0% { background-color: white; }
+  33% { background-color: moccasin; }  
+  67% { background-color: blanchedalmond; }
+  80% { background-color: navajowhite; }
 }
 
-.section2 {
-	width:200px;
-	font-size:40px;
-	padding-right:50px;
-	line-height:60px;
-	text-align:justify;
-	color:#a29d77;
-	font-family:"Courier New", Courier, monospace;
+h1 {
+	font-weight:normal;
+	font-size:30pt;
+	line-height:10pt;
 }
 
-.section3 {
-	width:400px;
-	margin-top:4000px;
-	font-size:40px;
-	padding-right:50px;
-	line-height:60px;
-	text-align:justify;
-	color:#a29d77;
-	font-family:"Courier New", Courier, monospace;
+h3 {
+	font-weight:normal;
+	font-size:14pt;
+	line-height:10pt;
 }
 
-.footer {
-	position:fixed;
-	margin:auto;
-	width:100%;
-	bottom:0;
-	text-align:center;
-	color:#a29d77;
-	font-family:"Andale Mono", monospace;
-	font-size:50px;
-	line-height:30px;
-	text-transform:uppercase;
-}
-
-a {
+a{
 	text-decoration:none;
-	color:#a29d77;
+	color:#4424f3;
+}
+.container {
+    position:relative;
+}
+.container p {
+    position:absolute;
+    border:solid 1px black;
+    font-family:Arial, sans-serif;
 }
 
-a:hover {
-	color:#FFF;
+.container p.a:hover {
+    background-color:antiquewhite;
+    color:white;
+}
+
+.container p.b:hover {
+    background-color:wheat;
+    color:white;
+}
+
+.container p.c:hover {
+    background-color:bisque;
+    color:white;
+}
+
+.container p.d:hover {
+    background-color:peachpuff;
+    color:white;
+}
+
+.container p.e:hover {
+    background-color:blanchedalmond;
+    color:white;
+}
+
+.container p.f:hover {
+    background-color:moccasin;
+    color:white;
+}
+
+.container p.g:hover {
+    background-color:navajowhite;
+    color:white;
+}
+
+.container p.h:hover {
+    background-color:burlywood;
+    color:white;
+}
+
+.container p.a{padding:20px; background-color:white; width:200px; height:90px; left:0;}
+.container p.b{padding:20px; background-color:white; width:200px; height:90px; left:150px;}
+.container p.c{padding:20px; background-color:white; width:200px; height:90px; left:300px;}
+.container p.d{padding:20px; background-color:white; width:200px; height:90px; left:450px;}
+.container p.e{padding:20px; background-color:white; width:200px; height:90px; left:600px;}
+.container p.f{padding:20px; background-color:white; width:200px; height:90px; left:750px;}
+.container p.g{padding:20px; background-color:white; width:200px; height:90px; left:900px;}
+.container p.h{padding:20px; background-color:white; width:200px; height:90px; left:1050px;}
+
+
+.container p:hover {
+ 	z-index:10; 
+ 	background-color:black;
+ 	color:white;  
+}
+
+.nav-container {
+    width:100%;
+    height:40px;
+    position:fixed;
+    bottom:0px;
+    margin-bottom:0px;
+
+}
+.backwarddiv {
+    width:80px;
+    height:40px;
+    margin-left:15px;
+    float:left;
+
+}
+
+.backward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.backward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.forwarddiv {
+    width:50px;
+    height:40px;
+    right:50px;
+    float:right;
+
+}
+
+.forward {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+    border-radius:50%;
+}
+
+.forward:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
+}
+
+.home {
+    width:50px;
+    height:40px;
+    right:50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.homebutton {
+    width:20px;
+    height:20px;
+    background-color:#fdff59;
+}
+
+.homebutton:hover {
+    background-color:blanchedalmond;
+    border:1px solid black;
 }
 
 </style>
 
 <body> 
-<div class="footer">matsuo bash&omacr;<br><span style="font-size:15px"><i>English translation by Jane Reichhold</i></span></div>
-<div class="section1">an old pond</div>
-
+<div class="author"><h1>Pancake?</h1><h3>by Shel Silverstein</h3></div>
 <div class="container">
-<div class="section2">a frog <a href="#jumps">jumps</a></div>
-<div class="section3"><p id="jumps">into the sound of water</p></div>
+<p class="a">Who wants a <a href="variations19_a.html">pancake</a>?<p>
+<p class="b">Sweet and piping hot?</p>
+<p class="c">Good little Grace looks up and says,</p>
+<p class="d">&quot;I&#39;ll take the one on top.&quot;</p> 
+<p class="e">Who else wants a pancake,</p>
+<p class="f">Fresh off the griddle?</p>
+<p class="g">Terrible Theresa smiles and says,</p>
+<p class="h">I&#39;ll take the one in the middle.&quot;</p>
 </div>
 
-
-
-
-
-<p style="display: block; position: fixed; top: 0px; right: 1em; font-size:40px; color: #a29d77;"><a style="text-decoration: none; color:#a29d77" href="variations20.html">&#8634;</a></p>
+<div class="nav-container">
+<div class="backwarddiv"><a href="variations18.html"><div class="backward"></div></a></div>
+<div class="forwarddiv"><a href="variations20.html"><div class="forward"></div></a></div>
+<div class="home"><a href="index.html"><div class="homebutton"></div></a></div>
 </body>
 
 </html>
