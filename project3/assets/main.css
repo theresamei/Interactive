@@ -4,12 +4,14 @@ body {
 }
 
 .site {
-    font-family:Arial;
+    font-family:Arial, sans-serif;
     font-size:15px;
     color:#484def;
 }
 
 .site a, .site a:visited, .site a:hover, .site a:active {
+    font-family:Arial, sans-serif;
+    font-size:15px;
     text-decoration:none;
     color:#484def;
 }
