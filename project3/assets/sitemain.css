@@ -614,7 +614,7 @@ body {
     border-bottom-left-radius:0%;
     position: absolute;
     left: 28%;
-    bottom: -2%;
+    bottom: -0.5%;
     -webkit-transition: all 500ms ease-out;
     -moz-transition: all 500ms ease-out;
     -o-transition: all 500ms ease-out;
@@ -740,11 +740,11 @@ body {
 }
 
 .E .box .bowlone {
-    width:54%;
+    width:55%;
     height:3vw;
     background: white;
     position: absolute;
-    left: 44.5%;
+    left: 44.75%;
     top: 10%;
     border: 1px dotted #ff3700;
     -webkit-transition: all 500ms ease-out;
@@ -755,7 +755,7 @@ body {
 }
 
 .E .box .bowltwo {
-    width:54%;
+    width:55%;
     height:3vw;
     background: white;
     border-top-right-radius:0%;
