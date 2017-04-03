@@ -1170,6 +1170,20 @@ body {
     border-bottom-left-radius:25%;
     left: 29%;
     top: 10%;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+}
+
+.O .box .bowlone:hover {
+    -webkit-transition: all 10ms ease-in;
+    -moz-transition: all 10ms ease-in;
+    -o-transition: all 10ms ease-in;
+    -ms-transition: all 10ms ease-in;
+    transition: all 10ms ease-in;
+    background-color:#ff3700;
 }
 
 .P {
