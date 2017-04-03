@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>THE FACE ON MARS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="assets/sitemain.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+	$(function(){
+
+		$('.letters').each(function() {
+
+		  var $letterWrapper = $(this);
+		  var letters = $letterWrapper.html().split('');
+		  var letterArray = [];
+
+		  for (i = 0; i < letters.length; i++) {
+		    console.log(letters[i]);
+
+		    var character = letters[i];
+		    var chracterDefinition = $('.letter-definition[data-character="' + character + '"]').html();
+		    var characterHTML = '<div class="letter" data-character="' + character + '">' + chracterDefinition + '</div>';
+		    
+		    letterArray.push(characterHTML);
+		  };
+
+		  $letterWrapper.html(letterArray);
+
+		});
+
+	});
+
+	</script>
+		
+</head>
+
+<body>
+
+
+<div class="image">
+<div class="img-one"><img src="assets/images/face.jpg" alt="the face on the moon" height="147" width="200"></div>
+</div>
+
+	<div class="container">	
+    <div class="letters">THE FACE ON MARS, SEEN UNDER OBLIQUE LIGHTING, SEEMS TO BE AN OVAL HUMANOID FACE WITH EYES, NOSE, AND A MOUTH. 0123456789</div>
+    </div>
+    </div>
+  
+
+    <div class="letter-definition" data-character=" ">
+    <div class="space"></div>
+	</div>
+
+	<div class="letter-definition" data-character=".">
+    <div class="period">
+    	<div class="point"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="'">
+    <div class="quotation">
+    	<div class="markone"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character=",">
+    <div class="comma">
+    	<div class="one"></div>
+    	<div class="two"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="-">
+    <div class="hyphen">
+    	<div class="endash"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="!">
+    <div class="exclamation">
+    	<div class="stroke"></div>
+    	<div class="point"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="?">
+    <div class="question">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    	<div class="point"></div>
+    	<div class="stroke"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="1">
+    <div class="one">
+    	<div class="stroke"></div>
+    	<div class="bar"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="2">
+    <div class="two">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="3">
+    <div class="three">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="4">
+    <div class="four">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="5">
+    <div class="five">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="6">
+    <div class="six">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="7">
+    <div class="seven">
+    	<div class="stroke"></div>
+    	<div class="bar"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="8">
+    <div class="eight">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="9">
+    <div class="nine">
+    	<div class="bowlone"></div>
+    	<div class="bowltwo"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="0">
+    <div class="zero">
+    	<div class="bowlone"></div>
+    	<div class="strike"></div>
+    </div>
+	</div>
+
+	<div class="letter-definition" data-character="A">
+    	<div class="A">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="B">
+    	<div class="B">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="C">
+         <div class="C">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="D">
+    	<div class="D">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="E">
+    	<div class="E">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="F">
+    	<div class="F">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="G">
+    	<div class="G">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="stroke"></div>
+	             <div class="stroketwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="H">
+    	<div class="H">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="I">
+    	<div class="I">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="J">
+    	<div class="J">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="K">
+    	<div class="K">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="L">
+    	<div class="L">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="M">
+    	<div class="M">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="N">
+    	<div class="N">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="O">
+    	<div class="O">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="P">
+    	<div class="P">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="Q">
+    	<div class="Q">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+	<div class="letter-definition" data-character="R">
+         <div class="R">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+       	</div>
+    </div>
+
+    <div class="letter-definition" data-character="S">
+    	<div class="S">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="T">
+         <div class="T">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+    	</div>
+    </div>
+
+    <div class="letter-definition" data-character="U">
+    	<div class="U">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="V">
+    	<div class="V">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="W">
+    	<div class="W">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="X">
+    	<div class="X">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	             <div class="bowlthree"></div>
+	             <div class="bowlfour"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="Y">
+    	<div class="Y">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	             <div class="bowlthree"></div>
+	         </div>   
+        </div>
+    </div>
+
+    <div class="letter-definition" data-character="Z">
+    	<div class="Z">
+	         <div class="box">
+	             <div class="bowlone"></div>
+	             <div class="bowltwo"></div>
+	         </div>   
+        </div>
+    </div>
+
+
+ 
+
+ </body>
+ </html>

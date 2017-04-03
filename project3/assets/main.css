@@ -3,6 +3,17 @@ body {
 	background: #CDD2C4;
 }
 
+.site {
+    font-family:Arial;
+    font-size:15px;
+    color:#484def;
+}
+
+.site a, .site a:visited, .site a:hover, .site a:active {
+    text-decoration:none;
+    color:#484def;
+}
+
 .canvas {
 	width: 1000px;
 	height: 2000px;
@@ -35,7 +46,26 @@ body {
     position: absolute;
     left: 92px;
     top: 30px;
+    -webkit-animation-name: squash;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 4;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: squash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4;
+    timing-function: ease-out;
 }
+
+@-webkit-keyframes squash {
+    from { width: 95px; height:65px; }
+    to  { width: 110px; height:153px; }
+}
+
+
 
 #uppercase-b {
     position: absolute;
@@ -507,10 +537,9 @@ body {
     top: -10px;
 }
 
-#uppercase-r {
-    position: absolute;
+#uppercase-w {
+    position:relative;
 }
-
 #uppercase-w .box {
     width:200px;
     height:200px;
@@ -671,33 +700,6 @@ body {
 #uppercase-j .box .bowlone {
     width:120px;
     height:163px;
-    background: #CDD2C4;
-    position: absolute;
-    border-top-right-radius:20%;
-    border-top-left-radius:0%;
-    border-bottom-right-radius:30%;
-    border-bottom-left-radius:40%;
-    left: -5px;
-    top: 0px;
-}
-
-#uppercase-j {
-    position: absolute;
-
-}
-
-#uppercase-j .box {
-    width:200px;
-    height:200px;
-    background: #484def;
-    position: absolute;
-    left:692px;
-    top:934px;
-}
-
-#uppercase-j .box .bowlone {
-    width:120px;
-    height:170px;
     background: #CDD2C4;
     position: absolute;
     border-top-right-radius:20%;
