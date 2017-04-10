@@ -578,8 +578,7 @@ body {
 .A .box {
     width:9vw;
     height:9vw;
-    background: white;
-    border:1px solid #ff3700;
+    background: #ff3700;
     position: relative;
     display:inline-block;
 }
@@ -588,7 +587,6 @@ body {
     width:45%;
     height:3vw;
     background: white;
-    border:1px dotted #ff3700;
     border-top-right-radius:25%;
     border-top-left-radius:25%;
     border-bottom-right-radius:0%;
@@ -596,18 +594,12 @@ body {
     position: absolute;
     left: 28%;
     top: 10%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
 .A .box .bowltwo {
     width:45%;
     height:4vw;
     background: white;
-    border:1px dotted #ff3700;
     border-top-right-radius:25%;
     border-top-left-radius:25%;
     border-bottom-right-radius:0%;
@@ -615,22 +607,11 @@ body {
     position: absolute;
     left: 28%;
     bottom: -0.5%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
 .A .box:hover, 
 .A .box .bowlone:hover, 
 .A .box .bowltwo:hover {
-    -webkit-transition: all 10ms ease-in;
-    -moz-transition: all 10ms ease-in;
-    -o-transition: all 10ms ease-in;
-    -ms-transition: all 10ms ease-in;
-    transition: all 10ms ease-in;
-    background-color:#ff3700;
 
 }
 
@@ -733,8 +714,7 @@ body {
 .E .box {
     width:9vw;
     height:9vw;
-    background: white;
-    border: 1px solid #ff3700;
+    background: #ff3700;
     position: relative;
     display:inline-block;
 }
@@ -746,12 +726,6 @@ body {
     position: absolute;
     left: 44.75%;
     top: 10%;
-    border: 1px dotted #ff3700;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
 .E .box .bowltwo {
@@ -763,14 +737,8 @@ body {
     border-bottom-right-radius:20%;
     border-bottom-left-radius:0%;
     position: absolute;
-    left: 44.5%;
+    left: 45%;
     bottom: 10%;
-    border: 1px dotted #ff3700;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
 .F {
@@ -1044,8 +1012,7 @@ body {
 .M .box {
     width:9vw;
     height:9vw;
-    background: white;
-    border: 1px solid #ff3700;
+    background: #ff3700;
     position: relative;
     display:inline-block;
 
@@ -1053,9 +1020,8 @@ body {
 
 .M .box .bowlone {
     width:25%;
-    height:8vw;
+    height:8.5vw;
     background: white;
-    border: 1px dotted #ff3700;
     position: absolute;
     border-top-right-radius:0%;
     border-top-left-radius:30%;
@@ -1063,18 +1029,12 @@ body {
     border-bottom-left-radius:0%;
     left: 15%;
     top: 10%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
 .M .box .bowltwo {
     width:25%;
-    height:8vw;
+    height:8.5vw;
     background: white;
-    border: 1px dotted #ff3700;
     position: absolute;
     border-top-right-radius:0%;
     border-top-left-radius:30%;
@@ -1082,26 +1042,8 @@ body {
     border-bottom-left-radius:0%;
     right: 15%;
     top: 10%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
 }
 
-.M .box:hover,
-.E .box:hover,
-.M .box .bowlone:hover, 
-.M .box .bowltwo:hover, 
-.E .box .bowlone:hover,
-.E .box .bowltwo:hover {
-    -webkit-transition: all 10ms ease-in;
-    -moz-transition: all 10ms ease-in;
-    -o-transition: all 10ms ease-in;
-    -ms-transition: all 10ms ease-in;
-    transition: all 10ms ease-in;
-    background-color:#ff3700;
-}
 
 .N {
     position: relative;
@@ -1111,39 +1053,22 @@ body {
 .N .box {
     width:9vw;
     height:9vw;
-    border:1px solid #ff3700;
-    background: white;
+    background: #ff3700;
     position: relative;
     display:inline-block;
 }
 
 .N .box .bowlone {
     width:45%;
-    height:8vw;
+    height:8.5vw;
     background: white;
     position: absolute;
-    border:1px dotted #ff3700;
     border-top-right-radius:25%;
     border-top-left-radius:0%;
     border-bottom-right-radius:0%;
     border-bottom-left-radius:0%;
     left: 28%;
     top: 10%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
-}
-
-.N .box:hover,
-.N .box .bowlone:hover {
-    -webkit-transition: all 10ms ease-in;
-    -moz-transition: all 10ms ease-in;
-    -o-transition: all 10ms ease-in;
-    -ms-transition: all 10ms ease-in;
-    transition: all 10ms ease-in;
-    background-color:#ff3700;
 }
 
 .O {
@@ -1170,20 +1095,30 @@ body {
     border-bottom-left-radius:25%;
     left: 29%;
     top: 10%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
+    -webkit-animation-name: squash;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 4;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: squash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4;
+    timing-function: ease-out;
+}
+
+@-webkit-keyframes squash {
+    from { width: 45%; height:7.3vw; }
+    to  { width: 60%; height:9vw; }
 }
 
 .O .box .bowlone:hover {
-    -webkit-transition: all 10ms ease-in;
-    -moz-transition: all 10ms ease-in;
-    -o-transition: all 10ms ease-in;
-    -ms-transition: all 10ms ease-in;
-    transition: all 10ms ease-in;
-    background-color:#ff3700;
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .P {
