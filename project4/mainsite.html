@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>THE STORE</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/site.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+	function plural(s, i) {
+	return i + ' ' + (i > 1 ? s + 's' : s);
+	}
+
+	function fridayDelta(offset) {
+	  // offset is in hours, so convert to miliseconds
+	  offset = offset ? offset * 60 * 60 * 1000 : 0;
+	  var now = new Date(new Date().getTime() + offset);
+	  var days = 4 - now.getDay() || 7;
+	  var hours = 23 - now.getHours();
+	  var minutes = 59 - now.getMinutes();
+	  var seconds = 59 - now.getSeconds();
+	  return [plural('day', days),
+	          plural('hour', hours),
+	          plural('minute', minutes), 
+	          plural('second', seconds)].join(' ');
+	}
+
+	// Save reference to the DIV
+	$refresh = $('#clock');
+
+	$refresh.text(fridayDelta());
+
+	// Update DIV contents every second
+	setInterval(function() {
+	  $refresh.text(fridayDelta());
+	}, 1000);
+	});
+
+	
+	</script>
+
+</head>
+
+<body>
+<div class="container">
+		<div class="name">
+		<p>claes oldenburg<br>fri - sun</p>
+		</div>
+		<div class="title">
+		<p>the store<br>13:00 - 18:00</p>
+		</div>
+		<div class="timer">
+		<div id="clock"></div>
+		<p>by app't only</p>
+		</div>
+		<div class="footer">
+		<div><p>please</p></div> 
+		<div><p>come</p></div> 
+		<div><p><span style="font-size:15pt";>&#9786;</span></p></div> 
+		<div><p>back</p></div> 
+		<div><p>later</p></div>
+		</div>
+</div>

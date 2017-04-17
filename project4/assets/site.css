@@ -1,0 +1,97 @@
+body {
+	margin:0 auto;
+}
+
+.container {
+	position:absolute;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	width:40vw;
+	height:40%;
+
+}
+
+.name {
+	position:absolute;
+	left:1px;
+	top:1px;
+	width:20vw;
+	height:10%;
+
+}
+
+.title {
+	position:absolute;
+	right:1px;
+	top:1px;
+	width:20vw;
+	height:10%;
+
+}
+
+p {
+	font-family:Arial, sans-serif;
+	font-size:10pt;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:14pt;
+
+}
+
+.title p {
+	text-align:right;
+
+}
+
+.timer {
+	position:absolute;
+	width:40vw;
+	height:20%;
+	top:45%;
+	left:0;
+	right:0;
+}
+
+.timer p {
+	font-size:9pt;
+	text-align:center;
+	text-transform:lowercase;
+	letter-spacing:1px;
+}
+
+#clock {
+	font-family:Arial, sans-serif;
+	font-size:10pt;
+	text-transform:uppercase;
+	letter-spacing:2px;
+	line-height:14pt;
+	text-align:center;
+
+
+}
+
+.container .footer {
+	position:absolute;
+	width: 100%;
+	height:10%;
+	text-align: center;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	bottom:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
