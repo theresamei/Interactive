@@ -5,41 +5,154 @@
 	<title>WELCOME TO THE STORE</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="refresh" content="value">
-	<link rel="stylesheet" href="assets/site.css">
+	<link rel="stylesheet" href="assets/claes.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	// var SpecialRedirectURL = ['night.html','morning.html','day.html','eve.html'];
-var SpecialRedirectURL = [
-   'closed.html',
-   'claesoldenburg.html'
-];
-                   
-function specRedirect() {
-  var currentTime = new Date();
-  var currentHour = currentTime.getHours();
-  if (currentHour < 10) { currentHour = '0'+currentHour; }
-  var currentMins = currentTime.getMinutes();
-  if (currentMins < 10) { currentMins = '0'+currentMins; }
+<!-- 	<script>
+		// var SpecialRedirectURL = ['night.html','morning.html','day.html','eve.html'];
+		var SpecialRedirectURL = [
+		   'closed.html',
+		   'claesoldenburg.html'
+		];
+		                   
+		function specRedirect() {
+		  var currentTime = new Date();
+		  var currentHour = currentTime.getHours();
+		  if (currentHour < 10) { currentHour = '0'+currentHour; }
+		  var currentMins = currentTime.getMinutes();
+		  if (currentMins < 10) { currentMins = '0'+currentMins; }
 
-  var now = currentHour+':'+currentMins;
-  var Hour = 0;
-  if ( (now >= '13:00') && (currentHour < '18:00') ) { Hour = 1; }
-//  alert(Hour+' goes to: '+SpecialRedirectURL[Hour]);
-  window.location.href = SpecialRedirectURL[Hour];
-}  
-window.onload = function() {
-  specRedirect(); 
-}
-	</script>
+		  var now = currentHour+':'+currentMins;
+		  var Hour = 0;
+		  if ( (now >= '13:00') && (currentHour < '18:00') ) { Hour = 1; }
+		//  alert(Hour+' goes to: '+SpecialRedirectURL[Hour]);
+		  window.location.href = SpecialRedirectURL[Hour];
+		}  
+		window.onload = function() {
+		  specRedirect(); 
+		}
+	</script> -->
+
+	<script>
+	(function($){
+  var date    = new Date(),
+      month   = date.getMonth();
+      day     = date.getDate(),
+      weekDay = date.getDay(),
+      hours   = {
+        start: new Date(date.getFullYear(), month, day),
+        end: new Date(date.getFullYear(), month, day)
+      };
+  
+  // weekDay var [0 = sun, 1 = mon, 2 = tues ... 5 = fri 6 = sat]
+  
+  // If it's Monday - Thursday
+  if(weekDay >= 1 && weekDay <= 4){
+
+    // Start at 7am, end at 8pm
+    hours.start.setHours(7);
+    hours.end.setHours(20);
+
+  // If it's Friday - Sunday
+  } else if(weekDay >= 5 && weekDay <= 0){
+
+    // Start at 1pm, end at 6pm
+    hours.start.setHours(13);
+    hours.end.setHours(18);
+
+  // If it's Sunday
+  } else {
+
+    // Start at 1pm, end at 6pm
+    hours.start.setHours(13);
+    hours.end.setHours(18);
+  }
+
+  function countDown(){
+    var date         = new Date(),
+        countHours   = ('0' + (hours.end.getHours() - date.getHours())).substr(-2),
+        countMinutes = ('0' + (59 - date.getMinutes())).substr(-2),
+        countSeconds = ('0' + (59 - date.getSeconds())).substr(-2);
+
+    // If it's currently not within the hours, don't show the countdown
+    if(date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()){
+      $('.countdown').hide();
+    } else if($('.countdown').not(':visible')){
+      $('.countdown').show();
+    }
+
+    $('.countdown .hours').text(countHours);
+    $('.countdown .minutes').text(countMinutes);
+    $('.countdown .seconds').html(countSeconds);
+
+  }
+
+  $(function(){
+    setInterval(function(){
+      countDown();
+    }, 1000);
+  });
+})(jQuery);
+
+window.setInterval(function(){ // Set interval for checking
+    var date = new Date(); // Create a Date object to find out what time it is
+    if(date.getHours() === 17 && date.getMinutes() === 55){ // Check the time
+        alert("WE WILL BE CLOSING IN 5 MINUTES.");// Do stuff
+    }
+}, 60000);
+</script>
 </head>
 
 <body>
-<div class="container">
+
+<div id="topbar">
 		<div class="name">
-		<p>claes oldenburg<br>fri - sun</p>
+		<p>claes oldenburg<br>open fri - sun</p>
+		</div>
+
+		<div class="title">
+		<p>the store</p>
+		<div class="numbers">
+			<div class="countdown">
+			<div class="hours"></div>:<div class="minutes"></div>:<div class="seconds"></div>
+			</div>
+		</div>
 		</div>
 </div>
-</body>
+	<div id="container">
+      <div class="div-table">
+             <div class="div-table-row">
+                <div class="div-table-col">01</div>
+                <div  class="div-table-col">02</div>
+                <div  class="div-table-col">03</div>
+                <div class="div-table-col">04</div>
+                <div  class="div-table-col">05</div>
+                <div  class="div-table-col">06</div>
+             </div>
+            <div class="div-table-row">
+                  <div class="div-table-col"><img src="assets/images/claes1.png" alt="Pie" height="55%" width="55%"></div>
+                <div class="div-table-col"><img src="assets/images/claes8.png" alt="Pie" height="60%" width="60%"></div>
+                <div class="div-table-col"><img src="assets/images/claes13.png" alt="Pie" height="65%" width="65%"></div>
+                <div class="div-table-col"><img src="assets/images/claes4.jpg" alt="Pie" height="53%" width="53%"></div>
+                <div class="div-table-col"><img src="assets/images/claes13.png" alt="Pie" height="65%" width="65%"></div>
+                <div class="div-table-col"><img src="assets/images/claes1.png" alt="Pie" height="55%" width="55%"></div>
+            </div>
+            <div class="div-table-row">
+                <div class="div-table-col">07</div>
+                <div class="div-table-col">08</div>
+                <div class="div-table-col">09</div>
+                <div class="div-table-col">10</div>
+                <div class="div-table-col">11</div>
+                <div class="div-table-col">12</div>
+           </div>
+            <div class="div-table-row">
+                <div class="div-table-col">ttt</div>
+                <div class="div-table-col">uuu</div>
+                <div class="div-table-col">Mkkk</div>
+           </div>
+      </div>
+      </div>
 
+
+</body>
 </html>
