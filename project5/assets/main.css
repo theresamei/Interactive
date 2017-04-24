@@ -1,0 +1,153 @@
+html, body {
+	background: #49fb35;
+	margin:0 auto;
+	padding:0;
+	perspective: 500px;
+	width:100%;
+	height:100%;
+}
+
+p {
+  font-family:Arial, sans-serif;
+  font-size:14pt;
+  text-decoration:none;
+  color:black;
+
+}
+
+h1 {
+	font-family:'Arial', sans-serif;
+	font-size:24pt;
+	line-height:24pt;
+	font-weight:normal;
+	letter-spacing:-1px;
+
+}
+
+dl, dd, dt {
+	font-family:Arial, sans-serif;
+	font-size:12pt;
+	line-height:14pt;
+}
+
+.container {
+	position:relative;
+	width:100vw;
+	height:100%;
+	height:auto;
+	overflow:hidden;
+}
+
+.left {
+	position:relative;
+	width:20%;
+	float:left;
+	margin-top:0px;
+	margin-left:20px;
+	margin-bottom:20px;
+	margin-right:20px;
+
+}
+
+.right {
+	position:relative;
+	width:20%;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	margin-bottom:20px;
+	margin-right:30px;
+}
+
+#interview {
+	width:48%;
+	height:100%;
+	position:relative;
+	top:0;
+	right:0;
+	margin:0 auto;
+	padding:2vw;
+	border-left: thin solid white;
+	-moz-column-width: 20vw;
+	-webkit-column-width: 20vw;
+	column-width: 20vw;
+	-webkit-column-gap: 2vw; /* Chrome, Safari, Opera */
+    -moz-column-gap: 2vw; /* Firefox */
+    column-gap: 2vw;
+    overflow:auto;
+}
+
+#interview p {
+	margin:0;
+  font-family:'Arial', sans-serif;
+  font-size:12pt;
+  text-decoration:none;
+  color:black;
+}
+
+
+
+a {
+  font-family:Arial, sans-serif;
+  font-size:14pt;
+  text-decoration:none;
+  color:black;
+}
+
+a:hover {
+  font-family:Arial, sans-serif;
+  font-size:14pt;
+  text-decoration:none;
+  color:white;
+}
+
+.footer {
+	position:relative;
+	width:100%;
+	bottom:9vw;
+	margin:0 auto;
+	clear:both;
+}
+
+.footer .disclaimer {
+	position:relative;
+	width:40%;
+	padding:20px;
+}
+
+.footer p {
+	font-size:8pt;
+	line-height:11pt;
+}
+
+
+
+#spinner {
+  position:fixed;
+  text-align: center;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  font-family:'Arial', sans-serif;
+  font-size:90pt;
+  letter-spacing:-12px;
+  text-decoration:none;
+  color:black;
+  z-index:1;
+  right:5%;
+  top:10%;
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-360deg); }
+}
+@keyframes depth {
+  0% { text-shadow: 0 0 black; }
+  25% { text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black; }
+  50% { text-shadow: 0 0 black; }
+  75% { text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black; }
+  100% { text-shadow: 0 0 black; }
+}
+
+

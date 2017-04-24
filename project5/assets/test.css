@@ -1,0 +1,26 @@
+body {
+	background: #49fb35;
+	margin:0 auto;
+	height:auto;
+	margin:20px;
+
+}
+
+.header {
+	width:100%;
+	position:fixed;
+}
+
+#container {
+	position:absolute;
+	top:10vw;
+	width:200%;
+}
+
+.wid {
+	height:40%;
+	overflow:auto;
+	-moz-column-width: 30vw;
+	-webkit-column-width: 30vw;
+	column-width: 30vw;
+}
