@@ -45,9 +45,9 @@ function tick() {
   secs %= 3600;
   var mins = Math.floor(secs/60);
   secs %= 60;
-  var result = "0"+days +' : ';
-      result += ((hours < 10 ) ? "0" : "" ) + hours + " : " + ( (mins < 10) ? "0" : "" ) + mins
-                + " : " + ( (secs < 10) ? "0" : "" ) + secs;
+  var result = "0"+days +' DAYS ';
+      result += ((hours < 10 ) ? "0" : "" ) + hours + " HRS " + ( (mins < 10) ? "0" : "" ) + mins
+                + " MINS " + ( (secs < 10) ? "0" : "" ) + secs + " SECS ";
   document.getElementById("countdown").innerHTML = result;
 }
 	</script>
@@ -76,16 +76,15 @@ function tick() {
 <body>
 <div class="container">
 		<div class="name">
-		<p>claes oldenburg<br>fri - sun</p>
+		<p>claes oldenburg<br>the store</p>
 		</div>
 		<div class="title">
-		<p>the store<br>13:00 - 18:00</p>
+		<p>fri - sun<br>13:00 - 18:00</p>
 		</div>
 		<div class="timer">
 		<body onload = "getSeconds()">
+		<p>COME BACK IN</p>
 		<div id="countdown"></div>
-		</body>
-		<p>by app't only</p>
 		</div>
 		<div class="footer">
 		<div><p>please</p></div> 

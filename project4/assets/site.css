@@ -50,7 +50,7 @@ p {
 	position:absolute;
 	width:40vw;
 	height:20%;
-	top:45%;
+	top:39%;
 	left:0;
 	right:0;
 }
@@ -58,8 +58,8 @@ p {
 .timer p {
 	font-size:9pt;
 	text-align:center;
-	text-transform:lowercase;
-	letter-spacing:1px;
+	text-transform:uppercase;
+	letter-spacing:2px;
 }
 
 #countdown {

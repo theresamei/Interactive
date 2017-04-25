@@ -49,21 +49,49 @@ p, th {
 }
 
 /* countdown timer */
-.numbers {
-	float: right;
+#numbers {
+	width:100%;
+	position:absolute;
+	margin: 0 auto;
+	display:block;
+	bottom: 0;
 }
 
 .countdown {
-	display: flex;
+	width:30%;
+	margin:0 auto;
+	text-align:center;
 }
 
 .hours, .minutes, .seconds {
 	font-family: Arial, Sans-serif;
-	font-size:14pt;
+	font-size:16pt;
 	text-transform:uppercase;
 	letter-spacing:1px;
-	text-align:right;
+	text-align:center;
 }
+
+.hours {
+    float:left;
+    width:9vw;
+}
+
+.minutes {
+    display: inline-block;
+    margin:0 auto;
+    width:9vw;
+}
+
+.seconds {
+    float:right;
+    width:9vw;
+}
+
+#flashingtext {
+                font-family: Trebuchet MS, sans-serif;
+                font-size: 9pt;
+                color: silver;
+            }
 
 /* grid */
 

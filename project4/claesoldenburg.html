@@ -70,9 +70,9 @@
 
   function countDown(){
     var date         = new Date(),
-        countHours   = ('0' + (hours.end.getHours() - date.getHours())).substr(-2),
-        countMinutes = ('0' + (59 - date.getMinutes())).substr(-2),
-        countSeconds = ('0' + (59 - date.getSeconds())).substr(-2);
+        countHours   = ('0' + (hours.end.getHours() - date.getHours())).substr(-2) + " HRS ", 
+        countMinutes = ('0' + (59 - date.getMinutes())).substr(-2) + " MINS ",
+        countSeconds = ('0' + (59 - date.getSeconds())).substr(-2) + " SECS " ;
 
     // If it's currently not within the hours, don't show the countdown
     if(date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()){
@@ -81,7 +81,7 @@
       $('.countdown').show();
     }
 
-    $('.countdown .hours').text(countHours);
+    $('.countdown .hours').text(countHours); 
     $('.countdown .minutes').text(countMinutes);
     $('.countdown .seconds').html(countSeconds);
 
@@ -101,6 +101,16 @@ window.setInterval(function(){ // Set interval for checking
     }
 }, 60000);
 </script>
+
+<script>
+function flash(el, c1, c2) {
+    var text = document.getElementById(el);
+    text.style.color = (text.style.color == c2) ? c1 : c2;
+}
+var clr1 = setInterval(function() {
+    flash('foo1', 'black', 'red')
+}, 1000);
+</script>
 </head>
 
 <body>
@@ -112,18 +122,22 @@ window.setInterval(function(){ // Set interval for checking
 
 <div id="topbar">
 		<div class="name">
-		<p>claes oldenburg<br>open fri - sun</p>
+		<p>claes oldenburg<br>the store</p>
 		</div>
 
 		<div class="title">
-		<p>the store</p>
-		<div class="numbers">
-			<div class="countdown">
-			<div class="hours"></div>:<div class="minutes"></div>:<div class="seconds"></div>
-			</div>
+		<p>fri - sun<br>
+		13:00 - 18:00</p>
 		</div>
-		</div>
+
+    <div id="numbers">
+    <div class="countdown">
+    <p id="foo1" style="font-size:9pt;">until closing</p>
+      <div class="hours"></div><div class="minutes"></div><div class="seconds"></div>
+    </div>
+    </div>
 </div>
+
 	<div id="container">
       <div class="div-table">
              <div class="div-table-row">
