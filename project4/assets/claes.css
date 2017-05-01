@@ -173,8 +173,12 @@ p, th {
 }
 
 @media screen and (max-width: 420px) {
+
+	.name p, .title p{
+		font-size:10pt;
+	}
   
-  #topimages img, #bottomimages img, {
+  #topimages img, #bottomimages img{
     width: 50%;
     height:50%;
   }
