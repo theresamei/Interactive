@@ -179,13 +179,9 @@ p, th {
     height:40%;
   }
 
-  #container {
-  	width:50%;
-  }
-
   #container img{
   	width:60%;
-  	height:60%;
+  	height:auto;
   }
 }
 
