@@ -185,7 +185,7 @@ p, th {
 
   #bottomimages img{
   	width:300%;
-  	height:300%;
+  	height:auto;
   }
 
   #container img{
