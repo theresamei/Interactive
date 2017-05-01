@@ -172,4 +172,12 @@ p, th {
 	display:none;
 }
 
+@media screen and (max-width: 420px) {
+  
+  img {
+    width: 20%;
+    height:20%;
+  }
+}
+
 
