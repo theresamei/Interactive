@@ -200,13 +200,14 @@ p, th {
   }
 
   .text {
-  	width:70%;
+  	width:75%;
   	height:auto;
   	margin-top:20vw;
   }
 
   .about p {
   	font-size:13pt;
+  	line-height:14pt;
   }
 }
 
