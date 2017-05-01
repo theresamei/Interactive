@@ -184,9 +184,7 @@ p, th {
   }
 
   #bottomimages img{
-  	position:fixed;
-  	width:120%;
-  	left:-80vw;
+  	width:100%;
   	height:auto;
   }
 
