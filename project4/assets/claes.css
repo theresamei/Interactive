@@ -174,16 +174,26 @@ p, th {
 
 @media screen and (max-width: 420px) {
 
-	.name p, .title p{
+  .name p, .title p{
 		font-size:10pt;
-	}
+  }
   
-  #topimages img, #bottomimages img{
+  #topimages img {
     width: 50%;
     height:50%;
   }
 
+  #bottomimages img{
+  	width:80%;
+  	height:80%;
+  }
+
   #container img{
+  	width:100%;
+  	height:auto;
+  }
+
+  .text {
   	width:100%;
   	height:auto;
   }
