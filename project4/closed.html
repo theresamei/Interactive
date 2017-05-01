@@ -2,14 +2,43 @@
 <html>
 
 <head>
-	<title>SORRY, WE ARE CLOSED NOW</title>
+	<title>THE STORE IS CURRENTLY CLOSED.</title>
 	<meta charset="utf-8" />
 	<meta http-equiv="refresh" content="value">
 	<link rel="stylesheet" href="assets/site.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	</script>
+<!-- 	<script>
+	function calculateHMSleft()
+{
+	//calculate
+	var now = new Date();
+	var hoursleft = 37-now.getHours();
+	var minutesleft = 59-now.getMinutes();
+	var secondsleft = 59-now.getSeconds();
+
+	//format 0 prefixes
+	if(minutesleft<10) minutesleft = "0"+minutesleft;
+	if(secondsleft<10) secondsleft = "0"+secondsleft;
+
+	//display
+	$('#HMSremaining').html(hoursleft+" HRS "+minutesleft+" MINS "+secondsleft+" SECS");
+}
+
+calculateHMSleft();
+setInterval(calculateHMSleft, 1000);
+	</script> -->
+
+
+<!-- <script>
+		var dateobj=new Date()
+var today=dateobj.getDay()
+switch(today){
+case 0:
+window.location="mainsite.html"
+break
+}
+</script>  -->
 </head>
 
 <body>
@@ -22,6 +51,7 @@
 		</div>
 		<div class="closed">
 		<p>sorry, we are closed now.</p>
+		<div id="HMSremaining"></div>
 		</div>
 		<div class="footer">
 		<div><p>please</p></div> 

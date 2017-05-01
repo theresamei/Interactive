@@ -88,7 +88,7 @@ p {
 	position:absolute;
 	width:40vw;
 	height:20%;
-	top:40%;
+	top:37%;
 	left:0;
 	right:0;
 }
@@ -102,6 +102,14 @@ p {
 	text-align:center;
 }
 
+#HMSremaining {
+	font-family:Arial, sans-serif;
+	font-size:11pt;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	line-height:14pt;
+	text-align:center;
+}
 
 
 
