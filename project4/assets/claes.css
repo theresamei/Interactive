@@ -174,9 +174,9 @@ p, th {
 
 @media screen and (max-width: 420px) {
   
-  img {
-    width: 20%;
-    height:20%;
+  #topimages img, #bottomimages img, {
+    width: 40%;
+    height:40%;
   }
 }
 
