@@ -177,6 +177,12 @@ p, th {
   .name p, .title p{
 		font-size:10pt;
   }
+
+  #topimages {
+  	width:100%;
+  	left:0;
+  	top:0;
+  }
   
   #topimages img {
     width:100%;
