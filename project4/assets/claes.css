@@ -198,6 +198,10 @@ p, th {
   	height:auto;
   	margin-top:20vw;
   }
+
+  .about p {
+  	font-size:13pt;
+  }
 }
 
 
