@@ -179,8 +179,8 @@ p, th {
   }
   
   #topimages img {
-    width: 50%;
-    height:50%;
+    width:40%;
+    height:40%;
   }
 
   #bottomimages img{
@@ -197,7 +197,7 @@ p, th {
   .text {
   	width:100%;
   	height:auto;
-  	margin-top:5vw;
+  	margin-top:15vw;
   }
 }
 
