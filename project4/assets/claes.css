@@ -175,8 +175,8 @@ p, th {
 @media screen and (max-width: 420px) {
   
   #topimages img, #bottomimages img, {
-    width: 45%;
-    height:45%;
+    width: 50%;
+    height:50%;
   }
 
   #container img{
