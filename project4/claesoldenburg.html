@@ -35,58 +35,58 @@
 	</script> -->
 
 	<script>
-	(function($){
-  var date    = new Date(),
-      month   = date.getMonth();
-      day     = date.getDate(),
-      weekDay = date.getDay(),
-      hours   = {
-        start: new Date(date.getFullYear(), month, day),
-        end: new Date(date.getFullYear(), month, day)
-      };
+// 	(function($){
+//   var date    = new Date(),
+//       month   = date.getMonth();
+//       day     = date.getDate(),
+//       weekDay = date.getDay(),
+//       hours   = {
+//         start: new Date(date.getFullYear(), month, day),
+//         end: new Date(date.getFullYear(), month, day)
+//       };
   
-  // weekDay var [0 = sun, 1 = mon, 2 = tues ... 5 = fri 6 = sat]
+//   // weekDay var [0 = sun, 1 = mon, 2 = tues ... 5 = fri 6 = sat]
   
-  // If it's Monday - Thursday
-  if(weekDay >= 1 && weekDay <= 4){
+//   // If it's Monday - Thursday
+//   if(weekDay >= 1 && weekDay <= 4){
 
-    // Start at 7am, end at 8pm
-    hours.start.setHours(7);
-    hours.end.setHours(20);
+//     // Start at 7am, end at 8pm
+//     hours.start.setHours(7);
+//     hours.end.setHours(20);
 
-  // If it's Friday - Sunday
-  } else if(weekDay >= 5 && weekDay <= 0){
+//   // If it's Friday - Sunday
+//   } else if(weekDay >= 5 && weekDay <= 0){
 
-    // Start at 1pm, end at 6pm
-    hours.start.setHours(13);
-    hours.end.setHours(18);
-  }
+//     // Start at 1pm, end at 6pm
+//     hours.start.setHours(13);
+//     hours.end.setHours(18);
+//   }
 
-  function countDown(){
-    var date         = new Date(),
-        countHours   = ('0' + (hours.end.getHours() - date.getHours())).substr(-2) + " HRS ", 
-        countMinutes = ('0' + (59 - date.getMinutes())).substr(-2) + " MINS ",
-        countSeconds = ('0' + (59 - date.getSeconds())).substr(-2) + " SECS " ;
+//   function countDown(){
+//     var date         = new Date(),
+//         countHours   = ('0' + (hours.end.getHours() - date.getHours())).substr(-2) + " HRS ", 
+//         countMinutes = ('0' + (59 - date.getMinutes())).substr(-2) + " MINS ",
+//         countSeconds = ('0' + (59 - date.getSeconds())).substr(-2) + " SECS " ;
 
-    // If it's currently not within the hours, don't show the countdown
-    if(date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()){
-      $('.countdown').hide();
-    } else if($('.countdown').not(':visible')){
-      $('.countdown').show();
-    }
+//     // If it's currently not within the hours, don't show the countdown
+//     if(date.getHours() < hours.start.getHours() || date.getHours() > hours.end.getHours()){
+//       $('.countdown').hide();
+//     } else if($('.countdown').not(':visible')){
+//       $('.countdown').show();
+//     }
 
-    $('.countdown .hours').text(countHours); 
-    $('.countdown .minutes').text(countMinutes);
-    $('.countdown .seconds').html(countSeconds);
+//     $('.countdown .hours').text(countHours); 
+//     $('.countdown .minutes').text(countMinutes);
+//     $('.countdown .seconds').html(countSeconds);
 
-  }
+//   }
 
-  $(function(){
-    setInterval(function(){
-      countDown();
-    }, 1000);
-  });
-})(jQuery);
+//   $(function(){
+//     setInterval(function(){
+//       countDown();
+//     }, 1000);
+//   });
+// })(jQuery);
 
 window.setInterval(function(){ // Set interval for checking
     var date = new Date(); // Create a Date object to find out what time it is
@@ -124,12 +124,12 @@ var clr1 = setInterval(function() {
 		13:00 - 18:00</p>
 		</div>
 
-    <div id="numbers">
+<!--     <div id="numbers">
     <div class="countdown">
     <p id="foo1" style="font-size:9pt;">until closing</p>
       <div class="hours"></div><div class="minutes"></div><div class="seconds"></div>
     </div>
-    </div>
+    </div> -->
 </div>
 
   <div id="topimages">
@@ -160,6 +160,7 @@ var clr1 = setInterval(function() {
       <img src="assets/images/scans/03.png">
       <img src="assets/images/scans/05.png">
       <img src="assets/images/scans/12.png">
+      <img src="assets/images/scans/23.png">
       <img src="assets/images/scans/10.png">
       <img src="assets/images/scans/33.png">
   </div>

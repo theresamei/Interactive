@@ -143,27 +143,15 @@ p, th {
 }
 
 #topimages2 { 
+	position:absolute;
 	right:10vw; 
-	z-index:2;
+	z-index:-4;
 }
 
 #topimages2 img {
 	width:50%;
 	height:50%;
-}
-
-#topimages3 { 
-	right:10vw; 
-	z-index:2;
-	margin:0 auto;
-	position:absolute;
-	top:44vw;
-	left:13vw;
-}
-
-#topimages3 img {
-	width:40%;
-	height:40%;
+	padding-bottom:110vw;
 }
 
 
