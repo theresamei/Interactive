@@ -91,6 +91,7 @@ figcaption {
     font-size:10pt;
     line-height:11pt;
     z-index:1;
+    text-transform:uppercase;
 }
 
 
