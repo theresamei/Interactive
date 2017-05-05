@@ -40,7 +40,6 @@ a:hover {
 	font-family:Arial, sans-serif;
 	text-decoration:none;
 	color:#ff280f;
-	text-transform:uppercase;
 	font-size:14px;
 }
 
@@ -50,4 +49,13 @@ h3 {
 	line-height:19px;
 	font-weight:normal;
 	text-decoration:underline;
+}
+
+.topnav {
+    width:100%;
+    height:10vh;
+    position:fixed;
+    top:0;
+    left:1vw;
+    margin:10px;
 }
