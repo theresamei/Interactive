@@ -4,53 +4,54 @@
 <head>
 	<title>THE STORE</title>
 	<meta charset="utf-8" />
-	<meta http-equiv="refresh" content="value">
+<!-- 	<meta http-equiv="refresh" content="value"> -->
 	<link rel="stylesheet" href="assets/site.css">
-
+	<meta http-equiv="refresh" content="5; url=file:///Users/terri/Desktop/interactive/project4/claesoldenburg.html" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-		function getSeconds() {
-  var now = new Date();
-  var time = now.getTime();  // time now in milliseconds
-  var ctime = new Date(now.getFullYear(),now.getMonth(),now.getDate(),13,0,0); // 1 pm
-// ctime - change time hh,mm,ss to whatever time required, e.g. 7,50,0 (0750)
+// 		function getSeconds() {
+//   var now = new Date();
+//   var time = now.getTime();  // time now in milliseconds
+//   var ctime = new Date(now.getFullYear(),now.getMonth(),now.getDate(),13,0,0); // 1 pm
+// // ctime - change time hh,mm,ss to whatever time required, e.g. 7,50,0 (0750)
 
-  var cday = 5-now.getDay() + 1;  // number of days until Friday
-  var ft = ctime.getTime() + (86400000*cday);  // add # days to Friday
+//   var cday = 5-now.getDay() + 1;  // number of days until Friday
+//   var ft = ctime.getTime() + (86400000*cday);  // add # days to Friday
 
-  var diff = ft - time;  
-  diff = parseInt(diff/1000);
-  if (diff > 86400) {diff = diff - 86400}
-  startTimer (diff);
-}
+//   var diff = ft - time;  
+//   diff = parseInt(diff/1000);
+//   if (diff > 86400) {diff = diff - 86400}
+//   startTimer (diff);
+// }
 
-var timeInSecs;
-var ticker;
+// var timeInSecs;
+// var ticker;
 
-function startTimer(secs){
-  timeInSecs = parseInt(secs);
-  ticker = setInterval("tick()",1000); 
-  tick(); // to start counter display right away
-}
+// function startTimer(secs){
+//   timeInSecs = parseInt(secs);
+//   ticker = setInterval("tick()",1000); 
+//   tick(); // to start counter display right away
+// }
 
-function tick() {
-  var secs = timeInSecs;
-  if (secs>0) { timeInSecs--; } else { clearInterval(ticker); }  // stop counting at zero
-//  getSeconds();  // and start again if required
+// function tick() {
+//   var secs = timeInSecs;
+//   if (secs>0) { timeInSecs--; } else { clearInterval(ticker); }  // stop counting at zero
+// //  getSeconds();  // and start again if required
 
-  var days = Math.floor(secs/86400);
-  secs %= 86400;
+//   var days = Math.floor(secs/86400);
+//   secs %= 86400;
 
-  var hours= Math.floor(secs/3600);
-  secs %= 3600;
-  var mins = Math.floor(secs/60);
-  secs %= 60;
-  var result = "0"+days +' DAYS ';
-      result += ((hours < 10 ) ? "0" : "" ) + hours + " HRS " + ( (mins < 10) ? "0" : "" ) + mins
-                + " MINS " + ( (secs < 10) ? "0" : "" ) + secs + " SECS ";
-  document.getElementById("countdown").innerHTML = result;
-}
+//   var hours= Math.floor(secs/3600);
+//   secs %= 3600;
+//   var mins = Math.floor(secs/60);
+//   secs %= 60;
+//   var result = "0"+days +' DAYS ';
+//       result += ((hours < 10 ) ? "0" : "" ) + hours + " HRS " + ( (mins < 10) ? "0" : "" ) + mins
+//                 + " MINS " + ( (secs < 10) ? "0" : "" ) + secs + " SECS ";
+//   document.getElementById("countdown").innerHTML = result;
+// }
 </script>
+
 
 <!-- <script>
 		var dateobj=new Date()
