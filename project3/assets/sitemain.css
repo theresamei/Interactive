@@ -729,7 +729,7 @@ body {
 }
 
 .E .box .bowltwo {
-    width:55%;
+    width:57%;
     height:3vw;
     background: white;
     border-top-right-radius:0%;
@@ -737,8 +737,26 @@ body {
     border-bottom-right-radius:20%;
     border-bottom-left-radius:0%;
     position: absolute;
-    left: 45%;
+    left: 44%;
     bottom: 10%;
+    -webkit-animation-name: stretch;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 4;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: stretch;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4;
+    timing-function: ease-out;
+}
+
+@-webkit-keyframes stretch {
+    from { width: 56%; height:1vw; }
+    to  { width: 56%; height:5vw; }
+}
 }
 
 .F {
@@ -988,11 +1006,24 @@ body {
     border-bottom-left-radius: 0%;
     right: 0%;
     top: 0%;
-    -webkit-transition: all 500ms ease-out;
-    -moz-transition: all 500ms ease-out;
-    -o-transition: all 500ms ease-out;
-    -ms-transition: all 500ms ease-out;
-    transition: all 500ms ease-out;
+    -webkit-animation-name: squash;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-delay: 4;
+    -webkit-animation-timing-function: ease-out;
+    animation-name: squash;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4;
+    timing-function: ease-out;
+}
+
+@-webkit-keyframes squash {
+    from { width: 0%; height:2vw; }
+    to  { width: 0%; height:1vw; }
+}
 }
 
 .L .box .bowlone:hover {

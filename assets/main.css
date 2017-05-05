@@ -1,8 +1,8 @@
 html, body {
-    height: 100%;
+    height: auto;
     width: 100%;
     padding: 0; margin: 0; 
-    background: tan;
+
 }
 
 p {
@@ -20,22 +20,22 @@ p .curly {
 }
 
 h1 {
-	color: #00FF49;
-	font-family: "Roboto Mono", Roboto, monospace;
-	font-size: 30px;
+	color: #000;
+	font-family: arial, sans-serif;
+	font-size: 17px;
 	font-weight: normal;
-	line-height:35px;
-	letter-spacing:-1px;
+	line-height:20px;
 }
 
 h2 {
-	font-family: "Roboto Mono", Roboto, monospace;
+	font-family: Arial, Sans-serif;
 	font-weight:normal;
-	letter-spacing:-0.5px;
+	font-size:15px;
+	color:#3333ff;
 }
 
 a, a:visited, a:active {
-    color:#00FF49;
+    color:black;
     font-family: Arial, Helvetica, Sans-serif;
     font-size:15px;
     text-decoration: none;
@@ -43,7 +43,7 @@ a, a:visited, a:active {
 
 
 a:hover {
-    color:#000;
+    color:#3333ff;
     font-family: Arial, Helvetica, Sans-serif;
     font-size:15px;
     text-decoration: none;
@@ -74,17 +74,47 @@ ol a:hover {
 
 }
 
-hr { 
-    display: block;
-    margin-bottom: 0.25em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: dashed;
-    border-width: .5px;
+img {
+	width:100%;
+	height:auto;
 }
 
-.container{ width:750px; padding-left:40px; }
-.column-left{ float: left; width: 250px; }
-.column-right{ float: right; width: 250px; }
-.column-center{ display: inline-block; width: 250px; }
+.topbar {
+	position:fixed;
+	width:auto;
+	height:30%;
+	padding:2vw;
+}
+
+.topbar .title {
+	position:fixed;
+	width:50%;
+	height:30%;
+	float:left;
+	margin-top:1vw;
+	top:0;
+	left:2vw;
+}
+
+.topbar .subtitle {
+	position:fixed;
+	width:50%;
+	height:30%;
+	float:left;
+	top:0;
+	right:2vw;
+	text-align:right;
+}
+
+.container{ 
+	position:absolute;
+	width:65%; 
+	height:auto;
+	margin-top:8vw;
+	padding:2vw;
+}
+
+.column-left{ float: left; width: 30%; }
+.column-right{ float: right; width: 30%; }
+.column-center{ float:left; width: 30%; }
 
