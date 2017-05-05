@@ -7,6 +7,7 @@
 	<meta http-equiv="refresh" content="value">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="assets/claes.css">
+  <meta http-equiv="refresh" content="40; url=https://theresamei.github.io/interactive/project4/mainsite.html" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- 	<script>
@@ -88,22 +89,25 @@
 //   });
 // })(jQuery);
 
-window.setInterval(function(){ // Set interval for checking
-    var date = new Date(); // Create a Date object to find out what time it is
-    if(date.getHours() === 17 && date.getMinutes() === 55){ // Check the time
-        alert("WE WILL BE CLOSING IN 5 MINUTES.");// Do stuff
-    }
-}, 60000);
+// window.setInterval(function(){ // Set interval for checking
+//     var date = new Date(); // Create a Date object to find out what time it is
+//     if(date.getHours() === 17 && date.getMinutes() === 55){ // Check the time
+//         alert("WE WILL BE CLOSING IN 5 MINUTES.");// Do stuff
+//     }
+// }, 60000);
 </script>
 
-<script>
-function flash(el, c1, c2) {
-    var text = document.getElementById(el);
-    text.style.color = (text.style.color == c2) ? c1 : c2;
+<body onload="countPopup();">
+<script type="text/javascript">
+function countPopup()
+{
+setTimeout("Popup()",20000);
+return false;
 }
-var clr1 = setInterval(function() {
-    flash('foo1', 'black', 'red')
-}, 1000);
+function Popup()
+{
+alert("WE WILL BE CLOSING IN 5 MINUTES.");
+}
 </script>
 </head>
 
